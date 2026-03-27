@@ -1,16 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>Project</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Project</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="p-4">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-4">
+    <div id="container" class="container">
+      <input id="nameInt" />
 
-  <div class="container">
-  </div>
+      <select name="gender select" id="genderSelect">
+        <option>men</option>
+        <option>women</option>
+      </select>
 
-  <script src="app.js"></script>
-</body>
+      <button onclick="createCard()">Create</button>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>

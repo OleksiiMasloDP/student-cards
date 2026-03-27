@@ -10,8 +10,11 @@ console.log(randomNum());
 
 function createCard() {
   const div = document.createElement("div");
-  div.innerHTML = `<img src="https://randomuser.me/api/portraits/${gender.value}/${randomNum()}.jpg"/>
-    <p>${int.value}</p>`;
+  div.classList.add("card", "w-25");
+  div.innerHTML = `<img class="card-img-top" src="https://randomuser.me/api/portraits/${gender.value}/${randomNum()}.jpg"/>\
+  <div class="card-body">
+    <h5 class="card-title">${int.value}</h5>
+    </div>`;
   container.appendChild(div);
   int.value = "";
 }
